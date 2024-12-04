@@ -1,0 +1,19 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+}
+
+.nav-links a {
+  margin-right: 15px;
+  text-decoration: none;
+
+  color: black;
+}
+
+.toggle-mode {
+  background: none;
+  border: none;
+  cursor: pointer;
+}

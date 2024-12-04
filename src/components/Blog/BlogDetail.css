@@ -1,0 +1,130 @@
+.blog-detail-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+.recent-blogs {
+  width: 30%;
+  /* background-color: #f9f9f9; */
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  height: calc(100vh - 60px); /* Adjust based on header size */
+}
+
+.recent-blog-card {
+  /* background: #fff; */
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.recent-blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.recent-blog-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.recent-blog-card h4 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.recent-blog-card p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 5px 0;
+}
+
+.recent-blog-card a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #007bff;
+}
+
+.recent-blog-card a:hover {
+  text-decoration: underline;
+}
+
+.blog-detail {
+  width: 65%;
+  padding: 20px;
+  /* background-color: #fff; */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+.blog-detail h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.blog-detail p {
+  font-size: 1rem;
+  margin: 10px 0;
+  color: #555;
+}
+
+.blog-detail-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.blog-detail p:last-child {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1024px) {
+  .blog-detail-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .recent-blogs {
+    width: 100%;
+    height: auto;
+  }
+
+  .blog-detail {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-detail-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .recent-blogs {
+    width: 100%;
+  }
+
+  .blog-detail {
+    width: 100%;
+  }
+
+  .blog-detail h1 {
+    font-size: 2rem;
+  }
+}
